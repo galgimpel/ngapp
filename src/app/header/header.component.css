@@ -1,0 +1,28 @@
+.circle-time {
+    padding: 0px 10px;
+    font-size: 11px;
+    border: 2px solid #4f565d;
+    border-radius: 45px;
+    width: 65px;
+    margin: 2px;
+    height: 65px;
+    line-height: 20px;
+    background-color: #343a4073;
+    display: flex;
+    flex-flow: column;
+    padding-top: 10px;
+}
+
+.numberCount {
+    font-size: 20px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+}
+

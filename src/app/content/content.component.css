@@ -1,0 +1,32 @@
+.title {
+    padding: 20px;
+}
+
+#one {
+    text-align: center;
+}
+
+.box-info {
+    padding-bottom: 10px;
+}
+
+.circle-image{
+
+ 
+}
+
+.circle-image .card-img-top {
+    height: 140px;
+    width: 140px;
+    border-radius: 75px;
+}
+
+.line {
+    height: 1px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #343a40;
+}
