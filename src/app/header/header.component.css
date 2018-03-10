@@ -1,3 +1,4 @@
+
 .circle-time {
     padding: 0px 10px;
     font-size: 11px;
@@ -7,7 +8,7 @@
     margin: 2px;
     height: 65px;
     line-height: 20px;
-    background-color: #343a4073;
+    background-color: #343a40a6;
     display: flex;
     flex-flow: column;
     padding-top: 10px;
@@ -23,10 +24,30 @@
     justify-content: center;
     padding: 10px;
     text-align: center;
-    background-color: #343a40;
+    background-color: #fcfcfd7d;
+    margin: 0px 35px;
     color: white;
+    border-radius: 15px;
+    margin-top: 70px;
 }
 
+.video-header{
+    width: 100%;
+    position: absolute;
+    padding-top: 90px; 
+    z-index: 999;
+}
+
+.video-header .text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    
+    background-color: #ffffffb5;
+    margin: 0px 85px;
+    border-radius: 12px;
+    color: #343a40;
+}
 
 
 .homepage-hero-module {

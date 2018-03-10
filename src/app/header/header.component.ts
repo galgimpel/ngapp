@@ -8,11 +8,8 @@ import * as $ from 'jquery';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
-
-  /**
-   * 
     //jQuery is required to run this code
     $(document).ready(function () {
 
@@ -77,7 +74,12 @@ export class HeaderComponent implements OnInit {
       });
     }
 
-   */
+
+  }
+
+
+
+
 
 
   ngOnInit() {
