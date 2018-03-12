@@ -13,3 +13,10 @@
 .navbar-brand {
     margin-right: 0px;
 }
+
+.name {
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-size: 12px;
+}
