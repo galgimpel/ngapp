@@ -1,0 +1,114 @@
+.title {
+    padding: 20px;
+}
+
+#one {
+    text-align: center;
+}
+
+.box-info {
+    padding-bottom: 10px;
+}
+
+.circle-image{
+
+ 
+}
+
+.name {
+    font-weight: 600;
+}
+
+.circle-image .card-img-top {
+    height: 140px;
+    width: 140px;
+    border-radius: 75px;
+    vertical-align: middle;
+    border-style: none;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p1 {
+    background-image: url("../../assets/ליליקה.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+    background-position-x: -60px;
+}
+
+.p2 {
+    background-image: url("../../assets/סתותיני.jpg");
+    background-size: 222px;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: -19px;
+}
+
+.p3 {
+    background-image: url("../../assets/גראסמין.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: -60px;
+}
+
+.p4 {
+    background-image: url("../../assets/neta.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-y: -30px;
+    background-position-x: -46px;
+}
+
+.p5 {
+    background-image: url("../../assets/שומינה.jpg");
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: -32px;
+}
+
+.p6 {
+    background-image: url("../../assets/רעות.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position-y: -26px;
+    background-position-x: -82px;
+}
+
+.p7 {
+    background-image: url("../../assets/תותה.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position-y: -1px;
+    background-position-x: -60px;
+}
+
+.p8 {
+    background-image: url("../../assets/אדרת.jpg");
+    background-size: 202px;
+    background-repeat: no-repeat;
+    background-position-y: -1px;
+    background-position-x: -60px;
+
+}
+
+.line {
+    height: 1px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #343a40;
+}
+
+.input-name {
+    border: 1px solid gray;
+    padding: 6px 10px;
+    border-radius: 3px;
+    width: 100%;
+    direction: rtl;
+}

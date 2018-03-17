@@ -1,0 +1,12 @@
+<section style="text-align: left;margin: 20px 50px;">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="exampleInputPassword1"
+        placeholder="Password">
+    </div>
+    <button type="submit" (click)="login()" class="btn btn-primary ">Submit</button>
+
+    <button type="button" (click)="home()" class="btn btn-primary ">Home</button>
+  </form>
+</section>

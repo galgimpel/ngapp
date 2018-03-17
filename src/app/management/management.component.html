@@ -1,0 +1,41 @@
+<section id="one" style="margin: 5px 45px;">
+  <!-- Portfolio Section -->
+  <h2 class="title">The Team</h2>
+
+  <div class="row">
+
+    <div class="col-lg-4 col-sm-6 portfolio-item" *ngFor="let person of peoples">
+
+
+      <div class="h-100 box-info">
+
+
+        <div class="circle-image">
+          <div class="card-img-top" [ngClass]="person.cssClass"></div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="name">
+          <input type="text" class="input-name" [(ngModel)]="person.name">
+        </div>
+        <div class="description" style="margin-top: 10px;">
+          <textarea class="input-name" [(ngModel)]="person.description">
+
+          </textarea>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+  <div class="row">
+
+    <button type="button" (click)="save()" class="btn btn-primary" style="width: 100%;
+      margin: 30px;
+      margin-top: 0px;}">Save</button>
+  </div>
+
+</section>

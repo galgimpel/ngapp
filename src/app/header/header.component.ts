@@ -84,44 +84,55 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit() {
-    
-    // Set the date we're counting down to
-    //var countDownDate = new Date("Fri Apr 27 2018 06:00:00").getTime();
-    var countDownDate = new Date("4/27/2018 06:00:00").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function () {
+    try {
 
-      // Get todays date and time
-      var now = new Date().getTime();
 
-      // Find the distance between now an the count down date
-      var distance = countDownDate - now;
+      // Set the date we're counting down to
+      //var countDownDate = new Date("Fri Apr 27 2018 06:00:00").getTime();
+      var countDownDate = new Date("4/27/2018 06:00:00").getTime();
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Update the count down every 1 second
+      var x = setInterval(function () {
 
-      this.expired = false;
+        // Get todays date and time
+        var now = new Date().getTime();
 
-      document.getElementById("days").innerHTML = days.toString();
-      document.getElementById("hours").innerHTML = hours.toString();;
-      document.getElementById("minutes").innerHTML = minutes.toString();;
-      document.getElementById("seconds").innerHTML = seconds.toString();;
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
 
-      // Display the result in the element with id="demo"
-      // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      //   + minutes + "m " + seconds + "s ";
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // If the count down is finished, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        this.expired = true;
-        // document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
+        this.expired = false;
+        if (document.getElementById("days") === null) {
+          return
+        }
+
+        document.getElementById("days").innerHTML = days.toString();
+        document.getElementById("hours").innerHTML = hours.toString();;
+        document.getElementById("minutes").innerHTML = minutes.toString();;
+        document.getElementById("seconds").innerHTML = seconds.toString();;
+
+        // Display the result in the element with id="demo"
+        // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        //   + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          this.expired = true;
+          // document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+
+
+    } catch (error) {
+
+    }
   }
 
 }
